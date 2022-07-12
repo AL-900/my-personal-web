@@ -1,0 +1,13 @@
+.project__detail {
+  @include section__height;
+  @include gradient();
+  .content {
+    display: grid;
+    place-items: center;
+    color: $gray-200;
+  }
+
+  img {
+    border-radius: 1rem;
+  }
+}

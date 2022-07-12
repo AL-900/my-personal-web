@@ -1,0 +1,42 @@
+.Services__Intro {
+  &__title {
+    color: $gray-300;
+  }
+
+  &__left {
+    margin: 2.6rem 0;
+    border-right: 0.6rem solid $gray-200;
+    border-radius: 1rem;
+    @include media-breakpoint-down(md) {
+      border: none;
+      margin: 1.5rem auto;
+    }
+    @include media-breakpoint-down(lg) {
+      // border-right: 0.6rem solid $gray-600;
+      margin: 2rem auto;
+    }
+
+    h3 {
+      margin: 0;
+      padding: 0 1rem;
+      color: $gray-300;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &__right {
+    // margin: 3rem 0;
+
+    @extend .Services__Intro__left;
+    border: none;
+
+    p {
+      padding: 0;
+      margin: 0;
+      color: $gray-300;
+
+      letter-spacing: 1px;
+      padding-left: 2rem;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#faq {
+  @include section__height;
+  // background: $gray-600 ;
+  @include gradient;
+  display: grid;
+  place-items: center;
+}

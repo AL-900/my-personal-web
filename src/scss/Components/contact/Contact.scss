@@ -1,0 +1,39 @@
+#contact {
+  @include section__height;
+
+  background-size: cover;
+
+  h4 {
+    @include text__gradient;
+  }
+
+  .Contact__Info__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact__hr {
+    height: 0.3rem;
+    width: 70%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px 25px;
+    @include gradient;
+  }
+}
+
+.Contact__Info {
+  padding: 0.5rem 0;
+
+  .icon {
+    color: $white;
+  }
+
+  &__info {
+    p {
+      color: $white;
+      text-transform: none !important;
+    }
+  }
+}

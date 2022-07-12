@@ -1,0 +1,17 @@
+#services {
+  @include section__height();
+  @include gradient();
+
+  .service__content {
+    @include media-breakpoint-up(xl) {
+      margin: 5rem auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin: 4rem auto;
+    }
+    @include media-breakpoint-down(lg) {
+      margin: 3rem auto;
+    }
+  }
+}

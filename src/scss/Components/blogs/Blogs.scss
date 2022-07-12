@@ -1,0 +1,53 @@
+.blog {
+  @include section__height();
+  @include gradient();
+  .card {
+    @include transition();
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 1rem 3rem rgba(0, 1, 0, 0.3%);
+    }
+  }
+  img {
+    max-height: 40rem;
+  }
+  .btns__paginetion {
+    text-align: center;
+
+    margin: 3rem auto;
+
+    .num__btn {
+      border: none;
+      font-size: 1.18rem;
+      font-weight: bolder;
+      color: $gray-500;
+      margin: 0 0.21rem;
+      border-radius: 50%;
+      background: transparent;
+    }
+    .active__btn {
+      @extend .num__btn;
+      color: $gray-200;
+    }
+
+    .next__btn {
+      font-weight: bold;
+      padding: 0.3rem 1rem;
+      border-radius: 0.18rem;
+      text-align: center;
+      font-size: 1rem;
+      border: 0.12rem solid $primary;
+      @include transition();
+      margin: 0.5rem;
+
+      &:hover {
+        background: $primary;
+        color: $white;
+      }
+    }
+    .prev__btn {
+      @extend .next__btn;
+    }
+  }
+}

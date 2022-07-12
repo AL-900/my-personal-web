@@ -1,0 +1,5 @@
+.aboutMe {
+  min-height: 80vh;
+  @include gradient();
+  color: $white;
+}

@@ -1,0 +1,22 @@
+.footer__social {
+  background-color: $gray-700;
+  z-index: 100;
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .social__icons {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    li {
+      @include font-style(#fff, 2rem);
+      padding: 0 0.5rem;
+
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.faq__form {
+  // @include height;
+  min-height: 30vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  color: $white;
+  margin: 5rem auto;
+
+  .left__side {
+    h3 {
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: $orange;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: left;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+  }
+
+  .right__side {
+    .faqMessageSentSuccessfull {
+      h4 {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $teal;
+      }
+    }
+  }
+
+  form {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    input {
+      width: 100%;
+      outline: none;
+      padding: 1rem 0;
+      border: none;
+      border-radius: 0.75rem;
+      margin-bottom: 0.9rem;
+      &::placeholder {
+        padding-left: 0.8rem;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+      }
+      padding-left: 0.8rem;
+    }
+    .inputWarning {
+      border: 2px solid $red;
+    }
+    textarea {
+      @extend input;
+      overflow-y: scroll;
+      scrollbar-width: 0;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+    button {
+      width: 60%;
+      outline: none;
+      border: 2px solid transparent;
+      padding: 0.5rem 0;
+      font-weight: 800;
+      background-color: $primary;
+      border-radius: 1rem;
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.center {
+  background-color: $primary;
+  @include section__height();
+  display: grid;
+  place-items: center;
+  h1 {
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+  }
+}

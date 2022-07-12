@@ -1,0 +1,23 @@
+.linkButton {
+  padding: 20px 40px;
+  margin: 20px 0;
+  background-color: $primary;
+  border-radius: 100px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+  @include transition();
+  color: $gray-400;
+
+  &:hover {
+    color: $white;
+    background-color: $secondary;
+  }
+}
+
+.linkButtonSubmit {
+  @extend .linkButton;
+  width: 100%;
+}

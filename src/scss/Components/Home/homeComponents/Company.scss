@@ -1,0 +1,15 @@
+#company {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 60vh;
+  .company__logo {
+    cursor: pointer;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .title {
+  }
+}

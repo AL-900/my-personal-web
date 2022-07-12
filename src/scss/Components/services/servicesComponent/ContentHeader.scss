@@ -1,0 +1,37 @@
+#content__header {
+  // padding-bottom: 1rem;
+
+  margin-bottom: 1rem;
+  @include media-breakpoint-down(md) {
+    margin: 1rem auto;
+  }
+
+  .icon {
+    svg {
+      @include font-style($gray-300, 2.5rem);
+    }
+
+    @include media-breakpoint-up(md) {
+      @include font-style($gray-300, 2rem);
+    }
+    @include media-breakpoint-up(lg) {
+      @include font-style($gray-300, 2.5rem);
+    }
+  }
+
+  .content__header__title {
+    font-size: 1.8rem;
+    display: inline-block;
+    font-weight: 900;
+    // @include text__gradient;
+    color: $gray-300;
+    letter-spacing: 1.5px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 2rem;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 2.5rem;
+    }
+  }
+}

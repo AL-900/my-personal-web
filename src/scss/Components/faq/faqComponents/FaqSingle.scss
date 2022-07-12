@@ -1,0 +1,42 @@
+.single_faq {
+  padding: 1.5rem 0.5rem;
+  margin: 1rem auto;
+  box-shadow: 10px 15px 20px rgba(9, 2, 68, 0.18);
+  border-radius: 1rem;
+  transition: all 1s ease;
+  background-color: $primary;
+  .qus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h6 {
+      font-weight: bolder;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+      color: $gray-200;
+      margin-bottom: 0;
+    }
+  }
+  button {
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    @include transition();
+    background-color: transparent;
+  }
+  .plus_btn {
+    color: $white;
+  }
+  .minus_btn {
+    color: $secondary;
+  }
+
+  p {
+    @include transition();
+    color: $white;
+    border-top: 3px solid $secondary;
+
+    border-radius: 0.5rem 3.5rem 0 0;
+  }
+}

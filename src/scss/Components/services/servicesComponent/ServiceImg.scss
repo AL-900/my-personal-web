@@ -1,0 +1,16 @@
+#Service__Img {
+  margin-top: 2rem;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 3rem;
+  }
+  @include media-breakpoint-down(lg) {
+    margin-top: 5rem;
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    margin-top: 0rem;
+  }
+}

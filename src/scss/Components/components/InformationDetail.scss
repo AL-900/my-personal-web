@@ -1,0 +1,15 @@
+.informationDetail {
+  display: flex;
+  align-items: center;
+
+  &Title {
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  &Info {
+    font-weight: light;
+    letter-spacing: 1px;
+    text-transform: none;
+  }
+}

@@ -1,0 +1,50 @@
+.homeBanner {
+  @include section__height();
+  // @include gradient();
+  background: $primary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &Logo {
+    &Img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+  }
+
+  &Intro {
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: $gray-300;
+      font-style: italic;
+      text-transform: capitalize;
+      span {
+        font-style: normal;
+      }
+    }
+    h3 {
+      color: $gray-300;
+      letter-spacing: 1px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    h4 {
+      @extend h3;
+      font-size: 2rem;
+    }
+    p {
+      color: $white;
+      font-size: 1.18rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+}
